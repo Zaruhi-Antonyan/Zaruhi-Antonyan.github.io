@@ -108,3 +108,13 @@ h2 { font-size: clamp(32px, 4vw, 46px); line-height: 1.2; letter-spacing: -.045e
   .contact-section { margin-top: 75px; }.contact-inner { padding-top: 60px; padding-bottom: 55px; }.contact-details { flex-direction: column; gap: 10px; }.site-footer { padding: 22px 0; flex-wrap: wrap; }.site-footer > span:nth-child(2) { order: 4; width: 100%; }.footer-year { margin-left: auto; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+
+
+/* Updated CV sections */
+.project-link-static { color: var(--cyan); font-size: 17px; cursor: default; }
+.background-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 13px; margin-top: 14px; }
+.background-card { padding: 20px; border: 1px solid var(--line); border-radius: 10px; background: rgba(17,26,44,.5); }
+.background-card h3 { font-size: 13px; margin: 12px 0 8px; }
+.background-card p { color: var(--muted); font-size: 10px; line-height: 1.9; margin: 0; }
+.background-card strong { color: var(--text); font-weight: 700; }
+@media (max-width: 640px) { .background-grid { grid-template-columns: 1fr; } }
